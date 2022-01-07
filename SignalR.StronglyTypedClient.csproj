@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>EasySignalR</Title>
+        <Authors>Krystian Olszówka &lt;k.olszowka@stacode.com&gt;</Authors>
+        <Description>The strongly typed SignalR client hubs.
+You don't need to register every handler manually and write method names to invoke server-side methods.</Description>
+        <PackageProjectUrl>https://github.com/Szysu/SignalR.StronglyTypedClient</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Szysu/SignalR.StronglyTypedClient</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>SignalR</PackageTags>
+        <PackageId>SignalR.StronglyTypedClient</PackageId>
+        <Company>Stacode</Company>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Castle.Core" Version="4.4.1" />
+      <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="6.0.1" />
+      <PackageReference Include="Microsoft.AspNetCore.SignalR.Core" Version="1.1.0" />
+      <PackageReference Include="NetCoreStack.DispatchProxyAsync" Version="2.2.0" />
+    </ItemGroup>
+
+</Project>
